@@ -9,7 +9,7 @@
     width: 100%;
     /* vh 螢幕高度 */
     height: 100vh;
-    background-image: url(./img/banner.jpg);
+    background-image: url(./Banner/Cakes.jpg);
     /* 背景-尺寸：填滿 - 50%、500px */
     background-size: cover;
     color: white;
