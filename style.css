@@ -111,12 +111,12 @@ body{
 
 #news #news-left {
     height: 350px;
-    background-image: url(/Banner/chocolatecakes.jpg)
+    background-image: url(./Banner/chocolatecakes.jpg)
 }
 
 #news #news-right {
     height: 350px;
-    background-image: url(/Banner/cup\cakes.jpg);
+    background-image: url(./Banner/cup\cakes.jpg);
 }
 
 /*按鈕樣式*/
@@ -192,11 +192,11 @@ a.button:hover {
     }
 
 #content #about{
-    background-image: url(/Banner/about.jpg);
+    background-image: url(./Banner/about.jpg);
 }
  
 #content #contact{
-    background-image: url(/Banner/contact.jpg);
+    background-image: url(./Banner/contact.jpg);
 }
 
 #map {
