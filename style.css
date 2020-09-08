@@ -74,9 +74,10 @@ body{
 #news #news-left {
     height: 350px;
     background-image: url(/Banner/chocolate\ cakes.jpg);
-    }
+}
 
 #news #news-right {
     height: 350px;
     background-image: url(/Banner/cup\ cakes.jpg);
+}
 
