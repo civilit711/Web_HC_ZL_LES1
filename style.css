@@ -165,13 +165,17 @@ a.button:hover {
     backdrop-filter: blur(5px) opacity(20%);
     }
 
-    #content #about{
-        background-image: url(url);
-    }
+#content #about{
+    background-image: url(/Banner/about.jpg);
+}
+ 
+#content #contact{
+    background-image: url(/Banner/contact.jpg);
+}
 
-
-    #map {
-        margin-top: 100px;
-        width: 350px;
-        height: 350px;
-   }
+#map {
+    margin-top: 100px;
+    margin-left: 500px;
+    width: 350px;
+    height: 350px;
+}
