@@ -28,7 +28,9 @@
     transition: 0.3s;
 }
 
-
+body{
+    color: rgb(156, 143, 143);
+}
 
 
    
@@ -62,7 +64,19 @@
     
     /* 最新消息 */
 #news {
-    height: 500px;
+    height: 100vh;
     background: #eee;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
     }
+
+#news #news-left {
+    height: 350px;
+    background-image: url(/Banner/chocolate\ cakes.jpg);
+    }
+
+#news #news-right {
+    height: 350px;
+    background-image: url(/Banner/cup\ cakes.jpg);
 
