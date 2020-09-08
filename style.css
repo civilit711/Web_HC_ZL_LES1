@@ -111,12 +111,12 @@ body{
 
 #news #news-left {
     height: 350px;
-    background-image: url(/Banner/chocolate\ cakes.jpg);
+    background-image: url(./img/chocolatecakes.jpg);
 }
 
 #news #news-right {
     height: 350px;
-    background-image: url(/Banner/cup\ cakes.jpg);
+    background-image: url(/Banner/cup\cakes.jpg);
 }
 
 /*按鈕樣式*/
