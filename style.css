@@ -111,7 +111,7 @@ body{
 
 #news #news-left {
     height: 350px;
-    background-image: url(./img/chocolatecakes.jpg);
+    background-image: url(/Banner/chocolatecakes.jpg)
 }
 
 #news #news-right {
@@ -152,3 +152,26 @@ a.button:hover {
     padding-left: 10px;
     font-weight: 100;
 }
+
+#content a span{
+    display: block;
+        background-filter: blur(5px) opacity(90%);
+        transition: 0.5s;
+
+
+}
+
+#content a span:hover{
+    backdrop-filter: blur(5px) opacity(20%);
+    }
+
+    #content #about{
+        background-image: url(url);
+    }
+
+
+    #map {
+        margin-top: 20px;
+        width: 100px;
+        height: 350px;
+   }
