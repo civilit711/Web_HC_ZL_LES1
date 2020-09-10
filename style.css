@@ -15,11 +15,11 @@
     color: white;
 }
 
-#banner nav {
+#banner nav, #banner-about nav, #banner-contact nav {
     padding: 30px;
 }
 
-#banner a {
+#banner a, #banner-about a, #banner-contact a {
     color: white;
     /* 文字-裝飾：無 */
     text-decoration: none;
@@ -28,17 +28,9 @@
     transition: 0.3s;
 }
 
-body{
-    color: #eee;
-    height:4000px;
-
-}
-
-
    
-#banner a:hover{
+#banner a:hover, #banner-about a:hover, #banner-contact a:hover {
     color: #aaa;
-
 }
 
 
@@ -54,6 +46,7 @@ body{
 #banner hr {
         width: 300px;
         opacity: 0.7;
+        margin: 0 auto;
     }
     
 #banner h1 {
@@ -61,29 +54,27 @@ body{
         font-size: 120px;
         padding: 30px;
     }
-
+   
     
-    
-    /* 最新消息 */
+/* 最新消息 */
 #news {
     width: 1200px;
     margin: 0 auto;
     height: 100vh;
-    background: #eee;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /*格線間隙*/
-    grid-gap: 50px;
-    padding: 100px 0;
-    text-align: left;
-    }
+    /* 格線間隙 */
+    grid-gap: 50px;  
+    padding: 100px 0;   
+    text-align: center;
+}
 
 #news > div {
     background: #fff;
 }
 
 #news h3{
-    color: #aaa;
+    color:#252525;
     padding: 20px;
     font-weight: 100;
     text-transform: uppercase;
@@ -96,27 +87,29 @@ body{
 }
 
 #news h1 {
-    font-size: 32px;
+    color: #885ff8;
+    font-size: 22px;
     font-weight: 100;
     padding: 20px;
 }
 
-#news p{
+#news p {
     padding: 30px;
     text-align: left;
     line-height: 2;
     color: #aaa;
+    height: 150px;
 }
 
 
 #news #news-left {
     height: 350px;
-    background-image: url(./Banner/chocolatecakes.jpg);
+    background-image: url(./banner/chocolate_cakes.jpg);
 }
 
 #news #news-right {
     height: 350px;
-    background-image: url(./Banner/cup\cakes.jpg);
+    background-image: url(./banner/cup_cakes.jpg);
 }
 
 /*按鈕樣式*/
@@ -136,9 +129,14 @@ a.button:hover {
 
 /*盒子區塊*/
 #box {
-    background-image: url(./img/candy.jpg);
+    background-image: url(./banner/candy.jpg);
     background-attachment: fixed;
+}
 
+
+
+#box h1{
+    text-align: center;
 }
 
 #box h2 {
@@ -147,11 +145,18 @@ a.button:hover {
     font-size: 32px;
     padding: 100px 0;
     /*背景濾鏡 模糊*/
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px) opacity(70%);
     letter-spacing: 10px;
     padding-left: 10px;
     font-weight: 100;
 }
+
+/* 關於我與聯絡我 */
+#content {
+    width: 1200px;
+    margin: 0 auto;
+}
+
 
 #content h1 {
     text-align: center;
@@ -180,8 +185,9 @@ a.button:hover {
 
 
 #content a span {
+    /* 改為區塊元素：填滿 */
     display: block;
-    background-filter: blur(5px) opacity(90%);
+    backdrop-filter: blur(3px) opacity(90%);
     transition: 0.5s;
 }
 
@@ -190,11 +196,11 @@ a.button:hover {
     }
 
 #content #about {
-    background-image: url(./Banner/about.jpg);
+    background-image: url(./banner/about.jpg);
 }
  
 #content #contact{
-    background-image: url(./Banner/contact.jpg);
+    background-image: url(./banner/contact.jpg);
 }
 
 #map {
@@ -238,4 +244,147 @@ footer p {
     color: aaa;
     letter-spacing: 3px;
     padding-left: 3px;
+}
+
+footer h2 a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+footer h2 a:hover {
+    text-decoration: none;
+    color: #888;
+}
+
+/* 關於我分頁 */
+/* 橫幅 */
+#banner-about  {
+    width: 100%;
+    /* vh 螢幕高度 */
+    height: 40vh;
+    background-image: url(./banner/about_1.jpg);
+    /* 背景-尺寸：填滿 - 50%、500px */
+    background-size: cover;
+    color: white;
+    /* 背景-附著：固定 */
+    background-attachment: fixed;
+}
+   
+
+#banner-about nav {
+    backdrop-filter: opacity(90%);
+}
+
+#banner-about h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 100;
+    letter-spacing: 20px;
+    padding-left: 20px;
+    line-height: 20vh;
+    backdrop-filter: opacity(90%);
+    height: 29vh;
+}
+
+#about-content {
+    width: 1200px;
+    margin: 0 auto;
+    background: white;
+    padding: 50px 80px;
+    margin-top: 100px;
+
+}
+
+#about-content h3 {
+    text-align: center;
+    padding: 20px;
+    color: #ddd;
+    letter-spacing: 10px;
+    padding-left: 10px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+#about-content hr {
+    width: 400px;
+    margin: 0 auto;
+}
+
+#about-content h1 {
+    text-align: center;
+    padding: 30px;
+    color: #aaa;
+    letter-spacing: 10px;
+    padding-left: 10px;
+    font-weight: 100;
+}
+
+#about-content #about-1 {
+    height: 350px;
+    background-image: url(./banner/cake_1.jpg);
+    background-size: cover;
+}
+
+#about-content #about-2 {
+    height: 350px;
+    background-image: url(./banner/cake_2.jpg);
+    background-size: cover;
+}
+
+#about-content #about-3 {
+    height: 350px;
+    background-image: url(./banner/cake_3.jpg);
+    background-size: cover;
+}
+
+#about-content p {
+    padding: 30px 0;
+    line-height: 2;
+    color: #888;
+}
+
+/* 聯絡我 */
+/* 橫幅 */
+#banner-contact {
+    width: 100%;
+    /* vh 螢幕高度 */
+    height: 40vh;
+    background-image: url(./banner/chocolate_cakes.jpg);
+    /* 背景-尺寸：填滿 - 50%、500px */
+    background-size: cover;
+    color: white;
+    /* 背景-附著：固定 */
+    background-attachment: fixed;
+}
+
+/* 表單 */
+#form-self {
+    width: 1200px;
+    padding: 30px;
+    background: #f6f6f6;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    margin: 100px auto 150px;
+}
+  
+#form-self #name, #form-self #email, #form-self #message {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    margin: 5px 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+  
+#form-self ::placeholder {
+    color: #ddd;
+  }
+  
+#form-self #buttons {
+    text-align: center;
+}
+
+#form-self #buttons input {
+    margin: 20px 30px;
+    cursor: pointer;
+    font-size: 16px;
 }
