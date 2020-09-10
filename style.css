@@ -113,15 +113,15 @@
 }
 
 /*按鈕樣式*/
-a.button {
+a.button, input[type=reset], input[type=submit] {
     text-decoration: none;
     color: #aaa;
     border: 1px solid #aaa;
-    padding: 10px 50px;
+    padding: 15px 80px;
     transition: 0.5s;
 }
 
-a.button:hover {
+a.button:hover, input[type=reset], input[type=submit] {
     color: white;
     background: #aaa;
 }
@@ -272,11 +272,11 @@ footer h2 a:hover {
 }
    
 
-#banner-about nav {
+#banner-about nav, #banner-contact nav  {
     backdrop-filter: opacity(90%);
 }
 
-#banner-about h2 {
+#banner-about h2, #banner-contact h2 {
     text-align: center;
     font-size: 36px;
     font-weight: 100;
@@ -284,7 +284,7 @@ footer h2 a:hover {
     padding-left: 20px;
     line-height: 20vh;
     backdrop-filter: opacity(90%);
-    height: 29vh;
+    height: 30vh;
 }
 
 #about-content {
